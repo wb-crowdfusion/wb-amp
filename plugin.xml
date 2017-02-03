@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<plugin>
+  <info>
+    <title>WB - AMP</title>
+    <provider>Warner Bros, Inc.</provider>
+    <description>Provides functionality for AMP (Accelerated Mobile Pages).</description>
+    <priority>100</priority>
+    <version>0.0.1</version>
+  </info>
+
+  <config>
+    <![CDATA[
+
+        ]]>
+  </config>
+
+  <permissions>
+  </permissions>
+
+</plugin>

@@ -1,0 +1,13 @@
+{
+  "name": "wb-crowdfusion/wb-amp",
+  "type": "crowdfusion-plugin",
+  "description": "Provides functionality for AMP (Accelerated Mobile Pages).",
+  "license": "Apache-2.0",
+  "require": {
+    "php": ">=5.4",
+    "wb-crowdfusion/crowdfusion": "~3.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.3"
+  }
+}
