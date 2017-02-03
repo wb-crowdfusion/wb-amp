@@ -14,6 +14,6 @@ final class FeatureFlags
      *
      * @var string
      */
-    const AMP_ENABLED = 'tmz:flag:articles:amp-enabled';
+    const AMP_ENABLED = 'wb:flag:articles:amp-enabled';
 
 }
