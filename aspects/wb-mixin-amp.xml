@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aspect
+  xmlns="http://www.crowdfusion.com/schema/aspect"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.crowdfusion.com/schema/aspect http://www.crowdfusion.com/schema/crowdfusion-aspect-2.0.xsd">
+  <info>
+    <name>WB: AMP (Accelerated Mobile Pages)</name>
+    <description>Given to elements that require AMP features.</description>
+    <elementmode>one</elementmode>
+  </info>
+  <meta_defs>
+    <meta id="#syndication-amp">
+      <title>AMP (Accelerated Mobile Pages)</title>
+      <validation datatype="boolean" />
+      <default>false</default>
+    </meta>
+  </meta_defs>
+  <tag_defs>
+  </tag_defs>
+</aspect>
