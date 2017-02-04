@@ -5,6 +5,6 @@
     xsi:schemaLocation="http://www.crowdfusion.com/schema/context http://www.crowdfusion.com/schema/crowdfusion-context-2.0.xsd">
 
   <objects>
-    <object id="AmpFilterer" class="Wb\Plugin\AmpPlugin\AmpFilterer" />
+    <object id="WbAmpFilterer" class="Wb\Plugin\AmpPlugin\AmpFilterer" />
   </objects>
 </context>

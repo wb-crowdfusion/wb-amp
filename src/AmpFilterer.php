@@ -15,7 +15,8 @@ class AmpFilterer extends \AbstractFilterer
     /**
      * @param \FlagsService $FlagsService
      */
-    public function setFlagsService(\FlagsService $FlagsService) {
+    public function setFlagsService(\FlagsService $FlagsService)
+    {
         $this->FlagsService = $FlagsService;
     }
 
@@ -24,7 +25,8 @@ class AmpFilterer extends \AbstractFilterer
      *
      * @return boolean
      */
-    public function isEnabled() {
+    public function isEnabled()
+    {
         return $this->FlagsService->getFlag(FeatureFlags::IS_ENABLED);
     }
 
@@ -37,7 +39,8 @@ class AmpFilterer extends \AbstractFilterer
      *
      * @return boolean
      */
-    public function canRenderHtml() {
+    public function canRenderHtml()
+    {
         if (!$this->isEnabled()) {
             return false;
         }
