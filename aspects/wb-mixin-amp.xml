@@ -6,11 +6,11 @@
   <info>
     <name>WB: AMP (Accelerated Mobile Pages)</name>
     <description>Given to elements that require AMP features.</description>
-    <elementmode>one</elementmode>
+    <elementmode>many</elementmode>
   </info>
   <meta_defs>
     <meta id="#amp-enabled">
-      <title>AMP (Accelerated Mobile Pages)</title>
+      <title>Enable AMP (Accelerated Mobile Pages)</title>
       <validation datatype="boolean" />
       <default>false</default>
     </meta>

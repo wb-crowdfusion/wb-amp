@@ -1,21 +1,21 @@
 <?php
 
-use \Wb\Plugin\AmpPlugin\FeatureFlags;
+namespace Wb\Plugin\AmpPlugin;
 
 /**
  * Class AmpFilterer
  */
-class AmpFilterer extends AbstractFilterer
+class AmpFilterer extends \AbstractFilterer
 {
     /**
-     * @var FlagsService
+     * @var \FlagsService
      */
     protected $FlagsService;
 
     /**
-     * @param FlagsService $FlagsService
+     * @param \FlagsService $FlagsService
      */
-    public function setFlagsService(FlagsService $FlagsService) {
+    public function setFlagsService(\FlagsService $FlagsService) {
         $this->FlagsService = $FlagsService;
     }
 
@@ -42,14 +42,7 @@ class AmpFilterer extends AbstractFilterer
             return false;
         }
 
-        /* @var $ampMeta Meta */
-        $ampMeta = $this->getParameter('enabled');
-
-        if (!$ampMeta || !$ampMeta->getValue()) {
-            return false;
-        }
-
-        return true;
+        return (bool)$this->getParameter('enabled');
     }
 
 }
