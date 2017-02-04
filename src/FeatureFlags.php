@@ -14,6 +14,6 @@ final class FeatureFlags
      *
      * @var string
      */
-    const AMP_ENABLED = 'wb:flag:articles:amp-enabled';
+    const IS_ENABLED = 'wb:flag:articles:amp-enabled';
 
 }

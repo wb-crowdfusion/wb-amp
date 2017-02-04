@@ -9,7 +9,7 @@
     <elementmode>one</elementmode>
   </info>
   <meta_defs>
-    <meta id="#syndication-amp">
+    <meta id="#amp-enabled">
       <title>AMP (Accelerated Mobile Pages)</title>
       <validation datatype="boolean" />
       <default>false</default>
