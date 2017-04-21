@@ -35,7 +35,7 @@ class AmpFilterer extends \AbstractFilterer
      *
      * Requirements:
      * - The plugin must be turned on.
-     * - Node must have the #syndication-amp meta flagged true. Pass to this method via ?amp=Data:#amp-enabled
+     * - Node must have the `#amp-enabled` meta flagged true. Pass to this method via ?amp=Data:#amp-enabled or boolean.
      *
      * @return boolean
      */
@@ -45,7 +45,16 @@ class AmpFilterer extends \AbstractFilterer
             return false;
         }
 
-        return (bool)$this->getParameter('enabled');
+        $param = $this->getParameter('enabled');
+
+        if ($param instanceof \Meta) {
+            /** @type $param \Meta */
+            $val = $param->getValue();
+        } else {
+            $val = $param;
+        }
+
+        return filter_var($val, FILTER_VALIDATE_BOOLEAN);
     }
 
 }

@@ -12,7 +12,7 @@
     <meta id="#amp-enabled">
       <title>Enable AMP (Accelerated Mobile Pages)</title>
       <validation datatype="boolean" />
-      <default>false</default>
+      <default>true</default>
     </meta>
   </meta_defs>
   <tag_defs>

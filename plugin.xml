@@ -5,7 +5,7 @@
     <provider>Warner Bros, Inc.</provider>
     <description>Provides functionality for AMP (Accelerated Mobile Pages).</description>
     <priority>100</priority>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
   </info>
 
   <config>
