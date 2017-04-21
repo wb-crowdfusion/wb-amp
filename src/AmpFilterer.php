@@ -45,7 +45,16 @@ class AmpFilterer extends \AbstractFilterer
             return false;
         }
 
-        return (bool)$this->getParameter('enabled');
+        $param = $this->getParameter('enabled');
+
+        if ($param instanceof \Meta) {
+            /** @type $param \Meta */
+            $val = $param->getValue();
+        } else {
+            $val = $param;
+        }
+
+        return filter_var($val, FILTER_VALIDATE_BOOLEAN);
     }
 
 }
